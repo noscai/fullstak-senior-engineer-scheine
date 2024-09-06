@@ -1,7 +1,3 @@
-Here’s the updated version of the assessment test with the database design and migration requirements included:
-
----
-
 ### Assessment Test: Backend and Frontend Development for German "Scheine" System
 
 **Objective:**  
@@ -82,7 +78,3 @@ You are tasked with creating a system that allows doctors to generate different 
 ---
 
 Good luck! We look forward to seeing your submission.
-
----
-
-This version includes both database design and migration requirements using TypeORM, ensuring the applicant demonstrates proficiency in handling database schema design and implementation through migrations.
