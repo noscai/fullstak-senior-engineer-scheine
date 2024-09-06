@@ -1,7 +1,3 @@
-Here's the updated task with the new information about the three different "Scheine" and the requirement to implement the preview functionality for just one of them:
-
----
-
 ### Assessment Test: Backend and Frontend Development for German "Scheine" System
 
 **Objective:**  
@@ -88,7 +84,3 @@ For the purpose of this assessment, you only need to implement the backend and f
 ---
 
 Good luck! We look forward to seeing your submission.
-
----
-
-This version now includes the information that the applicant should work with just one "Schein" (the **Mustersammlung**) for the preview functionality.
