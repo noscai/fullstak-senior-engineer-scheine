@@ -1,7 +1,18 @@
+Here's the updated task with the new information about the three different "Scheine" and the requirement to implement the preview functionality for just one of them:
+
+---
+
 ### Assessment Test: Backend and Frontend Development for German "Scheine" System
 
 **Objective:**  
-You are tasked with creating a system that allows doctors to generate different types of "Scheine" (e.g., AU, Überweisung, Rezepte) commonly used in German medical practices. The system will consist of a backend to process the form data and generate a PDF, and a frontend interface for doctors to input the required information and preview the results before generating the final "Schein."
+You are tasked with creating a system that allows doctors to generate different types of "Scheine" (e.g., AU, Überweisung, Rezepte) commonly used in German medical practices. The system will consist of a backend to process the form data and generate a PDF, and a frontend interface for doctors to input the required information and preview the results before generating the final "Schein." 
+
+We have provided three types of "Scheine" as examples:
+1. **Mustersammlung** (General medical certificate) [file: Mustersammlung.pdf]
+2. **Zeugnis über den mutmaßlichen Tag der Entbindung** (Certificate for estimated date of childbirth) [file: Zeugnis_über_den_mutmaßlichen_tag_der_entbindung.pdf]
+3. **Verordnung einer Krankenbeförderung** (Transportation order for medical purposes) [file: Verordnung_einer_krankenbeforderung.pdf]
+
+For the purpose of this assessment, you only need to implement the backend and frontend preview functionality for **one Schein**, specifically the **Mustersammlung**.
 
 ### Technology Stack:
 - **Backend**: 
@@ -19,18 +30,17 @@ You are tasked with creating a system that allows doctors to generate different 
    - Set up an ExpressJS server.
    - **Database Design**: Create a PostgreSQL database using TypeORM to store information about the "Scheine." The schema should include both common fields (e.g., patient details, doctor details, Schein type) and type-specific fields (e.g., diagnosis for AU, prescription details for Rezepte). Design the schema to support scalability for future types of "Scheine."
    - Implement TypeORM migrations to create the necessary tables in the database.
-   - Develop an API endpoint to accept input data (e.g., patient information, diagnosis, doctor's signature) from the frontend and store it in the database.
-   - Use a NodeJS PDF generator (e.g., PDFKit) to take the input and generate a PDF based on a provided template (see the attached PDF, `Mustersammlung.pdf`, for an example of a "Schein" format).
+   - Develop an API endpoint to accept input data (e.g., patient information, diagnosis) from the frontend and store it in the database.
+   - Use a NodeJS PDF generator (e.g., PDFKit) to take the input and generate a PDF based on the provided template (see the attached PDF, `Mustersammlung.pdf`, for an example of a "Schein" format).
    - Create an additional endpoint to preview the generated PDF.
 
 #### 2. **Frontend Development (Vite, React)**
    - Create a React frontend that allows doctors to input the required information for the "Schein."
-   - Form fields should include the following input fields (examples from the PDF template):
+   - Form fields should include the following input fields (examples from the **Mustersammlung** PDF template):
      - Name and Surname of the patient
      - Date of birth
      - Diagnosis
-     - Doctor's signature (simulated with a text input)
-     - Additional fields based on the type of "Schein" (AU, Überweisung, Rezepte).
+     - Additional fields specific to the **Mustersammlung**.
    - Provide a dropdown to select the type of "Schein" the doctor is creating.
    - Add a "Preview" button that submits the form data to the backend and displays the generated PDF in a preview window.
 
@@ -78,3 +88,7 @@ You are tasked with creating a system that allows doctors to generate different 
 ---
 
 Good luck! We look forward to seeing your submission.
+
+---
+
+This version now includes the information that the applicant should work with just one "Schein" (the **Mustersammlung**) for the preview functionality.
